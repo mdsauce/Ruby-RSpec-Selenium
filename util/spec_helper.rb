@@ -19,7 +19,8 @@ RSpec.configure do | config |
       :version => "#{ENV['version']}",
       :browserName => "#{ENV['browserName']}",
       :platform => "#{ENV['platform']}",
-      :name => test.full_description
+      :name => test.full_description,
+      :seleniumVersion => "3.7.1"
     }
     #If there's a build tag set it.
     if ENV['BUILD_TAG'] != nil
